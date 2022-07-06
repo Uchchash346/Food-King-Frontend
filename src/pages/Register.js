@@ -14,7 +14,7 @@ const Register = () => {
             dispatch({
                 type: "SHOW_LOADING",
             });
-            await axios.post("http://localhost:8080/api/users/register", value);
+            await axios.post("https://calm-tor-08841.herokuapp.com/api/users/register", value);
             message.success("Register Successfully");
             navigate("/login");
             dispatch({ type: "HIDE_LOADING" });

@@ -11,7 +11,7 @@ const CustomerPage = () => {
             dispatch({
                 type: "SHOW_LOADING",
             });
-            const { data } = await axios.get("http://localhost:8080/api/bills/get-bills");
+            const { data } = await axios.get("https://calm-tor-08841.herokuapp.com/api/bills/get-bills");
             setBillsData(data);
             dispatch({ type: "HIDE_LOADING" });
             console.log(data);

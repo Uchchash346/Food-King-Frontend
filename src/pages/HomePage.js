@@ -30,7 +30,7 @@ const Homepage = () => {
                 dispatch({
                     type: "SHOW_LOADING",
                 });
-                const { data } = await axios.get("http://localhost:8080/api/items/get-item");
+                const { data } = await axios.get("https://calm-tor-08841.herokuapp.com/api/items/get-item");
                 setItemsData(data);
                 dispatch({ type: "HIDE_LOADING" });
                 console.log(data);
